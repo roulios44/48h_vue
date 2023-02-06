@@ -6,6 +6,7 @@
   <HelloWorld msg="Bienvenue sur le site de la Baleine Bleu"/>
   <Login/>
   <Signin/>
+  <cardView ></cardView>
 </template>
 
 <script>
@@ -13,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
 import Login from './components/Login.vue'
 import Signin from './components/Signin.vue'
+import cardView from './components/CardViewProduit.vue'
 
 export default {
   name: 'App',
@@ -20,12 +22,16 @@ export default {
     HelloWorld,
     NavBar,
     Login,
-    Signin
+    Signin,
+    cardView
   }
 }
 </script>
 
 <style>
+*{
+    color: white;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
