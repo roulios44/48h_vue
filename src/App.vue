@@ -2,19 +2,25 @@
   <header>
     <NavBar/>
   </header>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/baleine.png" style="height: 100px;">
+  <HelloWorld msg="Bienvenue sur le site de la Baleine Bleu"/>
+  <Login/>
+  <Signin/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
+import Login from './components/Login.vue'
+import Signin from './components/Signin.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    NavBar
+    NavBar,
+    Login,
+    Signin
   }
 }
 </script>
@@ -26,5 +32,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 100px;
 }
 </style>
