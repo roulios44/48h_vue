@@ -25,6 +25,8 @@
     padding: 0 !important;
     overflow: hidden !important;
     background-color: #333 !important;
+    list-style-type: none !important;  
+
   }
 .navbar li {
   float: left !important;
@@ -38,6 +40,7 @@
   text-align: center !important;
   padding: 14px 16px !important;
   text-decoration: none !important;
+  list-style-type: none !important;  
 }
 
 </style>
