@@ -28,6 +28,7 @@
   }
 .navbar li {
   float: left !important;
+  list-style-type: none !important;
 }
 
 .navbar li a {

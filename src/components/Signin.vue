@@ -14,7 +14,7 @@
       <label for="address">Adresse :</label>  
       <input id="address" type="text"/>
       
-      <input type="button" value="Signin"/>
+      <input type="button" value="Sign-in"/>
     </div>
 </template>
 
