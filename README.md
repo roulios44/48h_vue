@@ -6,6 +6,7 @@ Baleine Bleu est un site de E-commerce qui communique sur plusieurs serveur.
 
 
 # Développement
+#### Alan JORDY - Jules CROIZIER
 ## Front - Vue.js
 
 Le site propose un service de E-commerce avec une création de compte, l'authentification, un catalogue de produit interserveur et un panier.
@@ -36,5 +37,11 @@ Communication avec la base de données afin d'envoyer les données avec des rout
 ### Cron Job
 Mise en place d'un script php permettant de récupérer les IP des serveurs afin de mettre à disposition le catalogue des produits de chaque serveurs.
 
+# Infrastructure
+#### (insérer nom)
+insérer travail réaliser.
 
+# Data
+#### (insérer nom)
+insérer travail réaliser.
 
