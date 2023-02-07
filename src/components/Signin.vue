@@ -22,8 +22,9 @@
       <label for="storeName" v-if="typeID==2">Enter your store name</label>
       <input id="storeName" type="text" v-model="storeName" v-if="typeID==2"/>
       <input type="button" value="Sign-in" v-on:click="register()"/>
-      {{ storeName }}
     </div>
+    <txt class="errMSG">{{ errorMessage }}
+    </txt>
 </template>
 <script>
 import axios from 'axios';
@@ -41,10 +42,22 @@ export default {
       type:"",
       typeID:0,
       storeName:"",
+      errorMessage:"",
     }
   },
   methods:{
-    async register(){
+    
+    async register(){ 
+      if(!this.name||!this.surname||!this.email||!this.password||!this.confirmPassword||!this.address){
+        this.errorMessage ="Please enter all informations"
+      } else if (this.typeID == "2" && !this.storeName) {
+        this.errorMessage = "Please enter your store name"
+      } else if (this.password!=this.confirmPassword) {
+        this.errorMessage ="Password and confirm password are not the same"
+      } else {
+        this.errorMessage = ""
+      }
+
       var temp = this.registrationDate.split("-");
       var to = temp[2] + "-" + temp[1] + "-" + temp[0];
       this.registrationDate = to;
@@ -57,9 +70,11 @@ export default {
         "registrationDate":this.registrationDate,
         "userType":this.typeID,
         "storeName":this.storeName,
+      
       }))
     }
   },
+  
   watch:{
     type : function(val){
       if(val=="Seller")this.typeID = 2
@@ -100,4 +115,9 @@ export default {
   padding: 14px 16px;
   text-decoration: none;
 }
+.errMSG {
+  color: red;
+}
+
+
 </style>
