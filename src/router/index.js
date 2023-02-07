@@ -12,12 +12,12 @@ const routes = [
     },
     {
         path:"/products",
-        name:"name",
+        name:"products",
         component:products,
     },
     {
         path:"/test",
-        name:"name",
+        name:"test",
         component:test,
     },
     {
@@ -30,7 +30,6 @@ const routes = [
         name:"name",
         component:seller,
     }
-    
 ]
 const router = createRouter({
   history: createWebHistory(),
