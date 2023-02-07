@@ -19,7 +19,11 @@ import Signin from '@/components/Signin.vue'
 import cardView from '@/components/CardViewProduit.vue'
 
 export default {
-  name: 'App',
+  data() {
+    return {
+
+    }
+  },
   components: {
     HelloWorld,
     NavBar,

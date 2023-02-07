@@ -10,15 +10,14 @@ const routes = [
     },
     {
         path:"/products",
-        name:"name",
+        name:"products",
         component:products,
     },
     {
-        parh:"/test",
-        name:"name",
+        path:"/test",
+        name:"test",
         component:test,
     }
-    
 ]
 const router = createRouter({
   history: createWebHistory(),
