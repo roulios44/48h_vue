@@ -36,9 +36,17 @@ Communication avec la base de données afin d'envoyer les données via des route
 ### Cron Job
 Mise en place d'un script php permettant de récupérer les IP des serveurs afin de mettre à disposition le catalogue des produits de chaque serveurs.
 
-# Infrastructure
-#### (insérer nom)
-insérer travail réaliser.
+# Réseaux
+#### Florian DAGNAS - Enzo ARCHARD - Noa LAUVRAY
+    
+## Infrastructure - Cisco Packet Tracer   
+Réalisation de l'infrastructure réseau visualisé dans le projet   
+    
+## Cybersécurité - Sécurisation de docker   
+Réalisation d'une documentation sur comment sécurisé ses containers Docker    
+    
+## DevOps - Docker-Compose    
+Réalisation du docker-compose.yml et des différents Dokerfile utilisé pour les différents containers demander   
 
 # Data
 #### (insérer nom)
