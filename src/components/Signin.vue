@@ -22,7 +22,7 @@
       <label for="storeName" v-if="typeID==2">Enter your store name</label>
       <input id="storeName" type="text" v-model="storeName" v-if="typeID==2"/>
       <input type="button" value="Sign-in" v-on:click="register()"/>
-      {{ storeName }}
+      <h1>{{ errorMessage }}</h1>
     </div>
 </template>
 <script>
@@ -41,23 +41,31 @@ export default {
       type:"",
       typeID:0,
       storeName:"",
+      errorMessage:"",
     }
   },
   methods:{
     async register(){
-      var temp = this.registrationDate.split("-");
-      var to = temp[2] + "-" + temp[1] + "-" + temp[0];
-      this.registrationDate = to;
-      const post = await axios.post("http://localhost/48h_back/addUser.php",JSON.stringify({
-        "name":this.name,
-        "surname":this.surname,
-        "password":this.password,
-        "email":this.email,
-        "address":this.address,
-        "registrationDate":this.registrationDate,
-        "userType":this.typeID,
-        "storeName":this.storeName,
-      }))
+      if(!this.name||!this.surname||!this.password||!this.email||!this.address||(this.typeID==2 && !this.storeName)){
+        this.errorMessage="Please fill all fields ."
+      }
+      else{
+        const temp = this.registrationDate.split("-");
+        const to = temp[2] + "-" + temp[1] + "-" + temp[0];
+        this.registrationDate = to;
+        const post = await axios.post("http://localhost/48h_back/addUser.php",JSON.stringify({
+          "name":this.name,
+          "surname":this.surname,
+          "password":this.password,
+          "email":this.email,
+          "address":this.address,
+          "registrationDate":this.registrationDate,
+          "userType":this.typeID,
+          "storeName":this.storeName,
+        }))
+        const res = await post.data
+        console.log(typeof(res))
+      }
     }
   },
   watch:{
