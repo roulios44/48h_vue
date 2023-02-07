@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Sign-in</h1>
+      <h1>Register</h1>
       <label for="mail">mail :</label>  
       <input id="email" type="text" v-model="email">
       <label for="surname">Surname :</label>  

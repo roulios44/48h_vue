@@ -23,7 +23,6 @@ export default {
   },
   methods:{
     async login(){
-      console.log("heloo");
       const req = await axios.post("http://localhost/48h_back/login.php",JSON.stringify({
         "email":this.email,
         "password":this.password,
