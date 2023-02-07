@@ -1,24 +1,40 @@
-# 48h_front
 
-## Project setup
-```
-npm install
-```
+# Baleine Bleu
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Baleine Bleu est un site de E-commerce qui communique sur plusieurs serveur.
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Développement
+## Front - Vue.js
+
+Le site propose un service de E-commerce avec une création de compte, l'authentification, un catalogue de produit interserveur et un panier.
+
+### Création de compte 
+Formulaire d'inscription qui insère les valeurs dans la base de données afin de créer un compte. Un compte possède des rôles pour différencier leurs fonctionnalitées.
+
+### Connexion 
+Formulaire de connexion qui vérifie dans la base de données si l'utilisateur existe et enregistre les valeurs utile tel que le rôle de l'utilisateur afin de lui attribuer les fonctionnalitées qui lui seront dédié.
+
+#### Client
+Peut réalisé des achats via le catalogue.
+
+#### Commerçant
+Peut ajouter des nouveaux produit dans son catalogue.
+
+#### Administrateur
+Peut black-lister les serveurs concurrent et ajouter un serveur partenaire.
+
+### Catalogue produit 
+Un catalogue produit est mit à disposition des utilisateurs afin de leurs permettrent de réaliser des commandes.
+
+## Back - php
+
+### Envoie des données avec le front
+Communication avec la base de données afin d'envoyer les données avec des routes en format json à la partie Front du site.
+
+### Cron Job
+Mise en place d'un script php permettant de récupérer les IP des serveurs afin de mettre à disposition le catalogue des produits de chaque serveurs.
+
+
+
