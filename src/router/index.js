@@ -4,7 +4,7 @@ import products from "@/views/products.vue"
 import test from"@/views/test.vue"
 import admin from "@/views/Admin.vue"
 import seller from "@/views/Seller.vue"
-import items from "@/views/Items.vue"
+import items from "@/views/items.vue"
 import login from "@/views/login.vue"
 import register from "@/views/Register.vue"
 const routes = [

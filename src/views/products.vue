@@ -1,5 +1,6 @@
 <template>
-<navBar />
+  <navBar />
+  
 </template>
 <script>
 import navBar from "@/components/NavBar.vue"
@@ -23,7 +24,6 @@ export default {
   },
   async mounted(){
     await this.getProduct()
-    console.log("data send")
     }
 }
 </script>
