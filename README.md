@@ -38,8 +38,16 @@ Communication avec la base de données afin d'envoyer les données avec des rout
 Mise en place d'un script php permettant de récupérer les IP des serveurs afin de mettre à disposition le catalogue des produits de chaque serveurs.
 
 # Infrastructure
-#### (insérer nom)
-insérer travail réaliser.
+#### Enzo ARCHARD - Florian DAGNAS - Noa LAUVRAY
+### Virtualisation
+Première idée : création de trois machines virtuelles pour une mise en place d'un réseau décentralisé.
+
+### Cisco Packet Tracer
+Maquettage d'une infrastructure réseau pour pouvoir imager nos idées.
+
+### Docker
+- Utilisation de conteneurs de données et gestion des conteneurs avec Docker Compose.
+- Gestion de l'aspect sécurité du site.
 
 # Data
 #### (insérer nom)
