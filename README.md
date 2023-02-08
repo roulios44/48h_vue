@@ -1,7 +1,7 @@
 
 # Baleine Bleu
 
-Baleine Bleu est un site de E-commerce qui communique sur plusieurs serveur.
+Baleine Bleu est un site de E-commerce qui communique sur plusieurs serveurs.
 
 
 
@@ -48,8 +48,4 @@ Maquettage d'une infrastructure réseau pour pouvoir imager nos idées.
 ### Docker
 - Utilisation de conteneurs de données et gestion des conteneurs avec Docker Compose.
 - Gestion de l'aspect sécurité du site.
-
-# Data
-#### (insérer nom)
-insérer travail réaliser.
 
