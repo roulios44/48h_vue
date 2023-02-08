@@ -1,4 +1,5 @@
 <template>
+  <NavBar />
     <h1>Panel Administrateur</h1>
     <div class="listOfIp">
       <label for="server">Serveur available :</label>
@@ -26,6 +27,7 @@
 
 <script>
 import axios from 'axios';
+import NavBar from "@/components/NavBar.vue"
 
 export default {
   data(){
@@ -70,6 +72,9 @@ export default {
   async mounted(){
     await this.getAllBlackList()
     await this.getAllAvailableIp()
+  },
+  components:{
+    NavBar,
   }
 }
 </script>
