@@ -3,9 +3,9 @@
         <ul>
             <li><img src="../assets/baleine.png" alt="image baleine bleu" style="height: 50px;" /></li>
             <li><a href="">Baleine bleu </a></li>
-            <li><a href="">Produit </a></li>
-            <li><a href="">Sign in </a></li>
-            <li><a href=""> Log in</a></li>
+            <li><a href="/items">Produits </a></li>
+            <li><a href="/Register">Register</a></li>
+            <li><a href="/login"> Log in</a></li>
         </ul>    
     </div>
 </template>
@@ -34,7 +34,6 @@
 }
 
 .navbar li a {
-    
   display: block !important;
   color: white !important;
   text-align: center !important;

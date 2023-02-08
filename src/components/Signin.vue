@@ -64,7 +64,7 @@ export default {
           "storeName":this.storeName,
         }))
         const res = await post.data
-        console.log(typeof(res))
+        
       }
     }
   },

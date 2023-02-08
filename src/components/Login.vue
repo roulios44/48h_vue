@@ -28,7 +28,18 @@ export default {
         "password":this.password,
       }))
       const res = await req.data
-      console.log(res)
+      if(res != false){
+        if(res[0].commandeId){
+          localStorage.setItem("userID",res[0].userId)
+          localStorage.setItem("userType",res[0].typeID)
+          localStorage.setItem("info",res)
+        }else{
+          localStorage.setItem("userID",res.userID)
+          localStorage.setItem("userType", res.userType)
+        }
+      }else{
+        console.log("bad password")
+      }  
     }
   }
 }
