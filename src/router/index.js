@@ -27,12 +27,12 @@ const routes = [
     },
     {
         path:"/admin",
-        name:"name",
+        name:"admin",
         component:admin,
     },
     {
         path:"/seller",
-        name:"name",
+        name:"seller",
         component:seller,
     },
     {
