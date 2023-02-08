@@ -7,6 +7,7 @@ import seller from "@/views/Seller.vue"
 import items from "@/views/items.vue"
 import login from "@/views/login.vue"
 import register from "@/views/Register.vue"
+import adminPanel from "@/views/addIp.vue"
 const routes = [
     {
         path: "/main",
@@ -47,6 +48,11 @@ const routes = [
         path:"/login",
         name:"login",
         component:login,
+    },
+    {
+        path:"/admin",
+        name:"admin",
+        component: adminPanel,
     },
 ]
 const router = createRouter({
