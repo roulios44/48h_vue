@@ -1,4 +1,6 @@
 <template>
+  <div class="container">
+
     <h1>Panel commercant</h1>
     <div class="createCategory">
       <h1>Create a category</h1>
@@ -10,7 +12,6 @@
 
       
       <h2>Ajouter produit</h2>
-
       <label for="image">Image :</label>
       <input id="image" class="text" type="text" v-model="imageURL"/>
       <label for="nom">Nom :</label>
@@ -27,6 +28,7 @@
         </select>
       <input class="panier" type="button" value="Add" v-on:click="createProduct()"/>
     </div>
+  </div>
 </template>
 
 
@@ -97,6 +99,7 @@ export default {
     border-radius: 20px !important;
     border-color: white !important;
     width: 30%;
+    margin-top: 20%;
 }
 .createCategory{
   display: inline-block;
@@ -110,5 +113,13 @@ export default {
 
 .card .panier{
     width: 80%;
+}
+.container{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
 }
 </style>

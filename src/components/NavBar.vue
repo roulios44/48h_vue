@@ -6,6 +6,9 @@
             <li><a href="/items">Produits </a></li>
             <li><a href="/Register">Register</a></li>
             <li><a href="/login"> Log in</a></li>
+            <li><a href="/admin"> Admin Pannel</a></li>
+            <li><a href="/seller"> Seller Pannel</a></li>
+
         </ul>    
     </div>
 </template>

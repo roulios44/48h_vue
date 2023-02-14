@@ -3,8 +3,7 @@ import App from "@/views/App.vue"
 import products from "@/views/products.vue"
 import test from"@/views/test.vue"
 import admin from "@/views/Admin.vue"
-import seller from "@/views/Seller.vue"
-import items from "@/views/items.vue"
+import items from "@/views/Items.vue"
 import login from "@/views/login.vue"
 import register from "@/views/Register.vue"
 import adminPanel from "@/views/addIp.vue"
@@ -31,11 +30,6 @@ const routes = [
         component:admin,
     },
     {
-        path:"/seller",
-        name:"seller",
-        component:seller,
-    },
-    {
         path:"/items",
         name:"items",
         component: items,
@@ -56,7 +50,7 @@ const routes = [
         component: adminPanel,
     },
     {
-        path:"/sellerPanel",
+        path:"/seller",
         name:"sellerPanel",
         component:sellerPanel,
     },
